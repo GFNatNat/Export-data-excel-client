@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API = axios.create({ baseURL: 'http://localhost:5050/api/companies' });
+const API = axios.create({ baseURL: 'https://export-data-excel-server.onrender.com/api/companies' });
 
 export const fetchCompanies = () => API.get('/');
 export const fetchCompany = (id) => API.get(`/${id}`);
