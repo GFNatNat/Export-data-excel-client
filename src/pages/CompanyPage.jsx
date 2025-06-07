@@ -63,9 +63,6 @@ const CompanyPage = () => {
           <Button variant="outlined" onClick={() => setEditable(!editable)}>
             {editable ? 'Hủy' : 'Chỉnh sửa'}
           </Button>
-          <Button variant="contained" color="success" startIcon={<FileDownloadIcon />} onClick={handleExportExcel}>
-            Xuất Excel
-          </Button>
         </Box>
 
         {editable && (
